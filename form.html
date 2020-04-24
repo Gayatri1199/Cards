@@ -1,0 +1,90 @@
+<html>
+    <head>
+<script>
+    function formvalidation()
+    {
+        var name=document.forms["sform"]["Name"];
+        var email=document.forms["sform"]["email"];
+        var pss=document.forms["sform"]["password"];
+        var phn=document.forms["sform"]["Telephone"];
+        var gen=document.forms["sform"]["gender"];
+
+        if (name.value == "")
+        {
+            window.alert("Enter your name");
+            name.focus();
+            return false;
+        }
+        if (email.value == "")
+        {
+            window.alert("Enter your email");
+            email.focus();
+            return false;
+        }
+        if (pss.value == "")
+        {
+            window.alert("Enter your password");
+            password.focus();
+            return false;
+        }
+        if (phn.value == "")
+        {
+            window.alert("Enter your number");
+            phn.focus();
+            return false;
+        }
+        if (gender.value == "")
+        {
+            window.alert("Select your gender");
+            gender.focus();
+            return false;
+        }
+
+    }
+</script>
+
+<style> 
+        formvalidation {                                         
+            margin-left: 70px; 
+            font-weight: bold ; 
+            float: left; 
+            clear: left; 
+            width: 100px; 
+            text-align: left; 
+            margin-right: 10px; 
+            font-family:sans-serif,bold, Arial, Helvetica; 
+            font-size:14px; 
+        } 
+           
+        div {  
+            box-sizing: border-box; 
+            width: 100%; 
+            border: 100px solid black; 
+            float: left; 
+            align-content: center; 
+            align-items: center; 
+        } 
+           
+        form {                                         
+            margin: 0 auto; 
+            width: 600px; 
+        }</style>
+    </head>
+        <body>
+            <h1 style="text-align: center;">SIGN-UP</h1>
+            <form name="sform" action="" onsubmit="return formvalidation()">
+            <p>NAME:<input type="text" name="Name"></p><br>
+            <p>EMAIL:<input type="email" name="email"></p><br>
+            <p>PASSWORD:<input type="password" name="password"></p><br>
+            <p>RING ME AT:<input type="number" name="Telephone"></p><br>
+            <p>GENDER::
+                MALE <input type="radio" name="gender">
+                FEMALE <input type="radio" name="gender"></p>
+                    <p><input type="submit" value="Submit" name="Submit">      
+                        <input type="reset" value="Reset" name="Reset">   
+                    </p>  
+                </form>
+
+        </body>
+    
+</html>

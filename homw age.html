@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <style>
+     
+      * {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2016/09/08/22/43/books-1655783__340.jpg");
+
+}
+
+img {
+  width: 100%;
+}
+
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+.card {
+  width: 300px;
+  height: 250px;
+  background: linear-gradient(135deg, #0ff0b3 0%, #036ed9 100%);
+  overflow: hidden;
+  font-family: sans-serif;
+  box-shadow: 0 0 20px #00000070;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  margin: 5rem auto;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-0.5rem) scale(1.03);
+}
+
+.top-section {
+  position: relative;
+}
+
+.name {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 40px;
+  color: #fff;
+  line-height: 1;
+  opacity: 0.8;
+}
+
+.name span {
+  background: #333;
+  padding: 0 5px;
+}
+
+.name span:last-of-type {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.info-section {
+  padding: 0 40px 40px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+h2 {
+  padding: 1rem 0 1rem;
+}
+
+h2:after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 40px;
+  background: #fff;
+}
+
+p {
+  text-align: justify;
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social a {
+  font-size: 20px;
+  color: linear-gradient(135deg, #ff57b9 0%, #a704fd 100%);
+  transition: all 0.4s;
+}
+
+.social a:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+      </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/bdd89edb33.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Profiles</title>
+  </head>
+  <body>
+    <div class="landing">
+      <div class="container">
+        <div class="card">
+          <div class="top-section">
+            <img
+              src="https://images.pexels.com/photos/450214/pexels-photo-450214.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt=""
+            />
+            </div>
+          <div class="info-section">
+            <h2>
+              About
+              <div></div>
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum modi
+              vitae facere atque reiciendis consequuntur corrupti magnam
+              officiis quos nobis!
+            </p>
+            <h2>
+              contact
+              <div></div>
+            </h2>
+            <div class="social">
+              <a href="" class="fab fa-facebook-square"></a>
+              <a href="" class="fab fa-twitter"></a>
+              <a href="" class="fab fa-instagram"></a>
+              <a href="" class="fab fa-youtube"></a>
+              <a href="" class="fab fa-codepen"></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top-section">
+            <img
+              src="https://images.pexels.com/photos/1138903/pexels-photo-1138903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt=""
+            />
+            <div class="name">
+              <span>Dean</span>
+              <br />
+              <span>Stanley</span>
+            </div>
+          </div>
+          <div class="info-section">
+            <h2>
+              About
+              <div></div>
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum modi
+              vitae facere atque reiciendis consequuntur corrupti magnam
+              officiis quos nobis!
+            </p>
+            <h2>
+              contact
+              <div></div>
+            </h2>
+            <div class="social">
+              <a href="" class="fab fa-facebook-square"></a>
+              <a href="" class="fab fa-twitter"></a>
+              <a href="" class="fab fa-instagram"></a>
+              <a href="" class="fab fa-youtube"></a>
+              <a href="" class="fab fa-codepen"></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top-section">
+            <img
+              src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt=""
+            />
+            <div class="name">
+              <span>Kelly</span>
+              <br />
+              <span>Howard</span>
+            </div>
+          </div>
+          <div class="info-section">
+            <h2>
+              About
+              <div></div>
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum modi
+              vitae facere atque reiciendis consequuntur corrupti magnam
+              officiis quos nobis!
+            </p>
+            <h2>
+              contact
+              <div></div>
+            </h2>
+            <div class="social">
+              <a href="" class="fab fa-facebook-square"></a>
+              <a href="" class="fab fa-twitter"></a>
+              <a href="" class="fab fa-instagram"></a>
+              <a href="" class="fab fa-youtube"></a>
+              <a href="" class="fab fa-codepen"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+            
+  </body>
+</html>
